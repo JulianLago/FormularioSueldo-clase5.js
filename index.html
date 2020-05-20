@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de Sueldos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+
+
+<h1 id="header1"> </h1>
+
+<form>
+<input type="text" placeholder="Nombre" id="nombreusuario">
+<input type="text" placeholder="Segundonombre" id="segundonombreusuario">
+<input type="text" placeholder="Apellido" id="apellidousuario">
+<input type="number" placeholder="Edad" id="edadusuario">
+<button id="botonuserdata">Ok</button>
+</form>
+<div id="userdata">
+    <input type="text" disabled id="inputuserdata" >
+</div>    
+    
+<form id = "formsueldomensual">
+    <input type="number" placeholder="Sueldo anual $" id="inputsueldoanual"/>
+    <button id="botonsueldomensual">Sueldo Mensual</button>
+    <input type="number" disabled id="showsueldomensual"/>
+
+</form>
+    <br/>
+<form id = "formsueldoanual">
+        <input type="number" placeholder="Sueldo mensual" id="inputsueldomensual"/>
+        <button id="botonsueldoanual">Sueldo Anual</button>
+        <input type="number" disabled id="showsueldoanual"/>
+</form>
+    
+
+
+    <script src='main.js'></script>
+</body>
+</html>
