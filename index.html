@@ -11,23 +11,36 @@
 <body>
 
 
-<h1 id="header1"> </h1>
+<h1 id="header1">Bienvenid@ </h1>
 
-<form>
+<form id="form-user-data">
+
+<label for="nombreusuario" >Nombre</label>
 <input type="text" placeholder="Nombre" id="nombreusuario">
+<br />
+
+<label for="Segundonombre">Segundo Nombre</label>
 <input type="text" placeholder="Segundonombre" id="segundonombreusuario">
+<br />
+<label for="Apellido">Apellido</label>
 <input type="text" placeholder="Apellido" id="apellidousuario">
+<br />
+<label for="edadusuario">Edad</label>
 <input type="number" placeholder="Edad" id="edadusuario">
-<button id="botonuserdata">Ok</button>
+<br />
+<input type="reset" id="limpiar-userdata"> 
+<button id="botonuserdata">Guardar</button>
+
 </form>
 <div id="userdata">
-    <input type="text" disabled id="inputuserdata" >
+    
 </div>    
     
 <form id = "formsueldomensual">
     <input type="number" placeholder="Sueldo anual $" id="inputsueldoanual"/>
     <button id="botonsueldomensual">Sueldo Mensual</button>
     <input type="number" disabled id="showsueldomensual"/>
+    <input type="reset"> 
 
 </form>
     <br/>
@@ -35,6 +48,7 @@
         <input type="number" placeholder="Sueldo mensual" id="inputsueldomensual"/>
         <button id="botonsueldoanual">Sueldo Anual</button>
         <input type="number" disabled id="showsueldoanual"/>
+        <input type="reset"> 
 </form>
     
 

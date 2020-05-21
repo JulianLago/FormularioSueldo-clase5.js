@@ -26,10 +26,29 @@ $Botonuserdata.onclick = function () {
     let nombreUsuario2 = document.getElementById("segundonombreusuario").value;
     let apellidoUsuario = document.getElementById("apellidousuario").value;
     let edadUsuario= String(document.getElementById("edadusuario").value);
-    document.getElementById("header1").innerHTML="Bienvenido " + nombreUsuario + "!";
-    let userData = nombreUsuario + " "+ nombreUsuario2 + " " + apellidoUsuario + " " + edadUsuario;
-    document.getElementById("inputuserdata").value=userData;
-    return false;
+    let sueldoMensualUsuario=String(document.getElementById("showsueldomensual").value);
+    document.getElementById("header1").innerHTML="Bienvenid@ " + nombreUsuario + "!";
+    
+    let userNombre ="Nombres y Apellido: " +  nombreUsuario + " "+ nombreUsuario2 + " " + apellidoUsuario ;
+    let userEdad=edadUsuario;
+    let userSueldo=sueldoMensualUsuario;
+    
+    let showUserData = document.createElement("input");
+        showUserData.value=userNombre;
+        showUserData.className = "input-user-data";
+        document.getElementById("userdata").appendChild(showUserData);
+
+    let showUserEdad=document.createElement("input");
+        showUserEdad.value="Edad: " + edadUsuario;
+        showUserEdad.className="input-user-data";
+        document.getElementById("userdata").appendChild(showUserEdad);    
+
+    let showUserSueldo = document.createElement("input");
+        showUserSueldo.value="Sueldo Mensual: "+ userSueldo;
+        showUserSueldo.className="input-user-data";
+        document.getElementById("userdata").appendChild(showUserSueldo);    
+
+   return false;
     
 
 }
